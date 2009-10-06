@@ -1,0 +1,15 @@
+h1. ER Member IDs
+
+Adds member IDs to the member table under Admin > Members and Groups > View Members
+
+h2. Instructions
+
+* Copy ext.er_member_ids.php into the system/extensions directory
+* Enable the extension
+* Rejoice, for you have a new column on your View Members page
+
+h2. Change Log
+
+*+Oct 6, 2009: 1.0.0+*
+
+* Initial Release
