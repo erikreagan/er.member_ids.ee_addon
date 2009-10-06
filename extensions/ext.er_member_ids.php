@@ -140,14 +140,14 @@ class Er_member_ids
          $out = $EXT->last_call;
       }
       
-      // if its a CP request and the homepage
+      // if its a CP request in the Members module and on the View Members page
       if (REQ == 'CP' && $IN->GBL('M') == "members" && $IN->GBL('P') == "view_members")
       {
          $matches[0] = '/<td(\s.+)>\sUsername/';
-         $replacements[0] = '<td $1>ID</td>$0';
+         $replacements[0] = "<td$1>\nID\n</td>\n$0";
          
          $matches[1] = '/<td(\s.+)>\s<a.+C=myaccount&amp;id=(\d+)/';
-         $replacements[1] = '<td $1>$2</td>$0';
+         $replacements[1] = "<td$1>\n$2\n</td>\n$0";
          
          $out = preg_replace($matches, $replacements, $out);
       }
