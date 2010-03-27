@@ -7,10 +7,11 @@
  * /system/extensions/ folder in your ExpressionEngine installation.
  *
  * @package ERMemberIds
- * @version 1.0.0
+ * @version 1.0.2
  * @author Erik Reagan http://erikreagan.com
  * @copyright Copyright (c) 2009 Erik Reagan
  * @see http://erikreagan.com/projects/er_member_ids/
+ * @license http://creativecommons.org/licenses/by-sa/3.0/ Attribution-Share Alike 3.0 Unported
  */
 
 
@@ -23,7 +24,7 @@ class Er_member_ids
    var $settings = array();
 
    var $name = 'ER Member Ids';
-   var $version = '1.0.0';
+   var $version = '1.0.2';
    var $description = 'Adds member ids to the View Members page in the CP';
    var $settings_exist = 'n';
    var $docs_url = '';
